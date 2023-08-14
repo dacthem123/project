@@ -1,0 +1,10 @@
+.home{
+    overflow:auto ;
+    height: 100%;
+    .slider-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

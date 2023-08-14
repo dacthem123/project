@@ -1,0 +1,19 @@
+<a
+  href="products"
+  class="list-group-item p-2 "
+  style="background-color: antiquewhite; border-radius: 5px;"
+>
+  View All Products
+</a>
+<a
+  href="products/create-product"
+  class="list-group-item p-2 "
+  style="background-color: rgb(52, 185, 94); border-radius: 5px;"
+>
+  Add New Product
+</a>
+<ul class="list-group" *ngFor="let cat of categoryList">
+  <a href="products/category/{{ cat.id }}" class="list-group-item">
+    {{ cat.categoryName }}
+  </a>
+</ul>

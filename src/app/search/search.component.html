@@ -1,0 +1,191 @@
+
+<div class="container parent-list">
+  <div class="row search-item" *ngFor="let item of SearchResult">
+    <div class="col-md-3">
+      <div class="products">
+        <h1>Sản phẩm Dâu Đỏ</h1>
+
+        <div class="card">
+          <div class="products-item">
+            <img src="assets/image/healthy-1.png" style="width:100%" alt="Nho" />
+            
+            <h6>
+              <a href="" routerLink="/products/{{ item.id }}">
+                {{ item.name }}
+              </a>
+            </h6>
+            <p  style="text-align:center;color:green">
+              <b>Name:{{ item.name }}</b
+              >Nho
+            </p>
+            <p  style="text-align:center;color:green">
+              <b>Price:{{ item.price }}</b
+              >300000Đ
+            </p>
+            <p  style="text-align:center;color:green">
+              <b>Quantity:{{ item.quantity }}</b
+              >2
+            </p>
+            <div class="product-footer">
+              <button
+                routerLink="/portfolio/{{ item.id }}"
+                type="button"
+                style="margin-right: 96px"
+                class="btn btn-outline-success"
+               
+              >
+                Xem chi tiết
+              </button>
+              <button
+                routerLink="/products/{{ item.id }}"
+                type="button" 
+                style="margin-right:96;"
+                class="btn btn-outline-success"
+              >
+                Mua ngay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+        <div class="products">
+          <h1>Sản Phẩm Nhãn Việt</h1>
+  
+          <div class="card">
+            <div class="products-item">
+              <img src="assets/image/healthy-2.png" style="width:100%" alt="phở" />
+              
+              <h6>
+                <a href="" routerLink="/products/{{ item.id }}">
+                  {{ item.name }}
+                </a>
+              </h6>
+              <p style="text-align:center;color:green">
+                <b>Name:{{ item.name }}</b
+                >Nho
+              </p>
+              <p style="text-align:center;color:green">
+                <b>Price:{{ item.price }}</b
+                >300000Đ
+              </p>
+              <p style="text-align:center;color:green">
+                <b>Quantity:{{ item.quantity }}</b
+                >2
+              </p>
+              <div class="product-footer">
+                <button
+                  routerLink="/portfolio/{{ item.id }}"
+                  type="button"
+                  style="margin-right: 96px"
+                  class="btn btn-outline-success"
+                >
+                  Xem chi tiết
+                </button>
+                <button
+                  routerLink="/products/{{ item.id }}"
+                  type="margin-left: 24px"
+                  class="btn btn-outline-success"
+                >
+                  Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="products">
+          <h1>Chanh Tươi việt Nam</h1>
+  
+          <div class="card">
+            <div class="products-item">
+              <img src="assets/image/healthy-4.png" style="width:100%" alt="Nho" />
+              
+              <h6>
+                <a href="" routerLink="/products/{{ item.id }}">
+                  {{ item.name }}
+                </a>
+              </h6>
+              <p  style="text-align:center;color:green">
+                <b>Name:{{ item.name }}</b
+                >Nho
+              </p>
+              <p style="text-align:center;color:green">
+                <b>Price:{{ item.price }}</b
+                >300000Đ
+              </p>
+              <p style="text-align:center;color:green">
+                <b>Quantity:{{ item.quantity }}</b
+                >2
+              </p>
+              <div class="product-footer">
+                <button
+                  routerLink="/portfolio/{{ item.id }}"
+                  type="button"
+                  style="margin-right:96px"
+                  class="btn btn-outline-success"
+                >
+                  Xem chi tiết
+                </button>
+                <button
+                  routerLink="/products/{{ item.id }}"
+                  type="button"
+                  class="btn btn-outline-success"
+                >
+                  Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="products">
+          <h1>Rau củ quả tươi sạch</h1>
+  
+          <div class="card">
+            <div class="products-item">
+              <img src="assets/image/healthy-3.png" style="width:100%" alt="Nho" />
+              
+              <h6>
+                <a href="" routerLink="/products/{{ item.id }}">
+                  {{ item.name }}
+                </a>
+              </h6>
+              <p style="text-align:center;color:green">
+                <b>Name:{{ item.name }}</b
+                >Nho
+              </p>
+              <p style="text-align:center;color:green">
+                <b>Price:{{ item.price }}</b
+                >300000Đ
+              </p>
+              <p style="text-align:center;color:green" >
+                <b>Quantity:{{ item.quantity }}</b
+                >2
+              </p>
+              <div class="product-footer">
+                <button
+                  routerLink="/portfolio/{{ item.id }}"
+                  type="button"
+                  style="margin-right:96px"
+                  class="btn btn-outline-success"
+                >
+                  Xem chi tiết
+                </button>
+                <button
+                  routerLink="/products/{{ item.id }}"
+                  type="button"
+                  class="btn btn-outline-success"
+                >
+                  Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

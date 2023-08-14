@@ -1,0 +1,95 @@
+
+    <div style="background-color:#339900;color:#FFCC00;">  
+        <marquee>GIỜ MỞ CỬA TỪ 7H-22H HẰNG NGÀY - BỮA ĂN GIA ĐÌNH AN TOÀN HƠN TẠI CỬA HÀNG THỰC PHẨM CHAY.</marquee>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFFFFF">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/image/brand.png" class="card-img-top" alt="..."  width="200" height="80" style="float: left; margin-right: 10px;">
+      </div>
+     
+     
+      <form class="d-flex" role="search"  style="margin-left:950px">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit" [routerLink]="'/search'">Search</button>
+        
+      </form>
+          <h1> </h1>
+      <a href="signup" class="button">ĐăngKý</a>
+    </nav>
+
+<nav class="navbar navbar-expand-lg navbar-light"style="background-color: #339900">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="/dashboard">client</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="portfolio">contact</a></li>
+          <li class="nav-item dropdown">
+            
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Shop</a>
+                
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="contact">All Products</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="contact">Popular Items</a></li>
+              <li><a class="dropdown-item" href="contact">New Arrivals</a></li>
+              
+            </ul>
+            
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-dark text-white" type="submit" [routerLink]="'/products'">
+            <i class="bi-cart-fill me-1"></i>
+            Cart
+            <span class="badge bg-dark text-white ms-1 rounded-pill">{{this.productCarts.length}}</span>
+          </button>
+        </form>
+        <a
+          href="signup"
+          style="
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgb(255, 255, 255);
+            color: green;
+          "
+          >Đăng nhập</a>
+
+          <form class="d-flex">
+            
+            <button class="btn btn-outline-dark text-white" type="submit" [routerLink]="'/contact'">
+              <i class="bi-cart-fill me-1"></i>
+              Giỏ Hàng
+              <span class="badge bg-dark text-white ms-1 rounded-pill">{{this.productCarts.length}}</span>
+            </button>
+            
+          </form>
+          
+        </div>
+    </div>
+  </nav>
+  

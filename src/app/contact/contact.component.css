@@ -1,0 +1,23 @@
+
+.h2 {
+    color: rgb(255, 0, 8);
+}
+
+.parent-list {
+    
+    
+    .card {
+        margin: 0px;
+    }
+}
+img {
+    max-width: 100%;
+    height: 250px;
+}
+.class{
+    width: 1900px;
+}
+
+*, div, button {
+    pointer-events: all;
+  }

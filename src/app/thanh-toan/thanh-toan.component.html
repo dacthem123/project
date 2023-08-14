@@ -1,0 +1,29 @@
+<form #frm1="ngForm" (ngSubmit)=submit(frm1.value) class="container">
+    <div class="row"> <div class="alert alert-danger">THANH TOÁN ĐƠN HÀNG</div>
+ </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label>Họ tên của quý khách</label>
+            <input [(ngModel)]="hoten" name="ht" minlength="6" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label>Email của quý khách</label>
+            <input [(ngModel)]="email" name="e" type="email" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label>Địa chỉ giao hàng</label>
+            <input [(ngModel)]="diachi" name="dc" minlength="10" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label>Điện thoại</label>
+            <input [(ngModel)]="dienthoai" name="dt" minlength="9" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <button class="btn btn-info" type="submit"> Lưu Đơn Hàng </button>
+        <button class="btn btn-warning" type="submit"> Xóa Đơn Hàng </button>
+    </div>
+    
+</form>

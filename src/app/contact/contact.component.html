@@ -1,0 +1,24 @@
+<div class="overflow-x-auto">
+  <div class="container">
+    <div class="row mt-2">
+      <div class="filter d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchVal">
+        <button class="btn btn-outline-success" (click)="changeSearchVal()" type="button">Search Name</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="parent-list row">
+      <div class="card col-2" *ngFor="let item of productListTemp">
+        <img [src]="item.img" alt="" />
+        <h5 class=".text-warning" style="while-space:nowrap; ">{{item.name}}</h5>
+        <p style="text-align:center;color:red">Giá:{{item.price}}</p>
+        <button class="btn btn-primary" (click)="addtocart(item)">Thêm Giỏ Hàng</button>
+        <button class="btn btn-warning" type="button" (click)="themGioHang()">Xem chi Tiết</button>
+        <button class="btn btn-success  " type="button" (click)="taodonhang(item)">Lưu đơn hàng</button>
+      </div>
+    </div>
+  </div>
+</div>

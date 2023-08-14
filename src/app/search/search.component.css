@@ -1,0 +1,20 @@
+
+img {
+    max-width: 200%;
+    height: 200px;
+    left:50%;
+}
+.btn{
+ 
+    background-color:#FFCC00;
+    color: #000;
+    
+    
+}
+.btn:hover{
+ 
+    background-color:rgb(212, 255, 0);
+    color: #000;
+    
+    
+}

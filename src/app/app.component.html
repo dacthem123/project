@@ -1,0 +1,241 @@
+<div style="height: 700px; width: 1550px; overflow: scroll">
+  <!-- Content goes here -->
+
+  <app-header></app-header>
+
+  <div id="slider">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/image/slider-1.jpg" class="img-fluid w-100" alt="slider1" />
+        </div>
+        <div class="carousel-item active">
+          <img src="assets/image/cover-11.jpg" class="img-fluid w-100" alt="slider2" />
+        </div>
+        <div class="carousel-item active">
+          <img src="assets/image/healthy-3.png" class="img-fluid w-100" alt="slider3" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div>
+        <i class="organik-float">
+          <div class="rotate">
+            <h1>
+              
+              <img src="assets/image/lg.png" class="lg-img" />
+              
+            </h1>
+
+          </div>
+        </i>
+        <div class="flex-container">
+          <div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="box-text text-center product-items">
+                  <div class="box-text-inner">
+                    <img src="assets/image/chuối.jpg" data-src="" alt="hoa" width="20" height="20"
+                      title="nong sản  sạch" class="img-product-item">
+                    <h5 class="uppercase header-title">Chuối</h5>
+                    <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                    <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                  </div>
+                  <div class="granola-product">
+                    <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                      (click)="onClickProduct(product.id)" class="icon-product">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="box-text text-center product-items">
+                  <div class="box-text-inner">
+                    <img src="assets/image/cai-bo-xoi.jpg" data-src="" alt="hoa" width="20" height="20"
+                      title="nong sản  sạch" class="img-product-item">
+                    <h5 class="uppercase header-title">Cai-Bo-Xoi</h5>
+                    <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                    <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                  </div>
+                  <div class="granola-product">
+                    <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                      (click)="onClickProduct(product.id)" class="icon-product">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="box-text text-center product-items">
+                  <div class="box-text-inner">
+                    <img src="assets/image/nho-ngon-tay.jpg" data-src="" alt="hoa" width="20" height="20"
+                      title="nong sản  sạch" class="img-product-item">
+                    <h5 class="uppercase header-title">Nho ngon tay</h5>
+                    <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                    <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                  </div>
+                  <div class="granola-product">
+                    <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                      (click)="onClickProduct(product.id)" class="icon-product">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="box-text text-center product-items">
+                  <div class="box-text-inner">
+                    <img src="assets/image/sup-lo-baby.jpg" data-src="" alt="hoa" width="20" height="20"
+                      title="nong sản  sạch" class="img-product-item">
+                    <h5 class="uppercase header-title">Sup-Lo</h5>
+                    <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                    <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                  </div>
+                  <div class="granola-product">
+                    <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                      (click)="onClickProduct(product.id)" class="icon-product">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="box-text text-center product-items">
+                  <div class="box-text-inner">
+                    <img src="assets/image/healthy-4.png" data-src="" alt="hoa" width="20" height="20"
+                      title="nong sản  sạch" class="img-product-item">
+                    <h5 class="uppercase header-title">Chanh Xanh</h5>
+                    <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                    <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                  </div>
+                  <div class="granola-product">
+                    <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                      (click)="onClickProduct(product.id)" class="icon-product">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="box-text text-center product-items">
+                  <div class="box-text-inner">
+                    <img src="assets/image/sale-3.jpg" data-src="" alt="hoa" width="20" height="20"
+                      title="nong sản  sạch" class="img-product-item">
+                    <h5 class="uppercase header-title">Cải Tím</h5>
+                    <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                    <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                  </div>
+                  <div class="granola-product">
+                    <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                      (click)="onClickProduct(product.id)" class="icon-product">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="new-font">
+          _________________Khách Hàng Tự Lựa Chọn Hàng ___________________
+        </h1>
+        <router-outlet></router-outlet>
+        <div>
+          <h1 class="new-font">
+            _________________Hàng Bán chạy Phối Hợp với Online___________________
+          </h1>
+          <div class="flex-container">
+            <div>
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="box-text text-center product-items">
+                    <div class="box-text-inner">
+                      <img src="assets/image/myLogo.png" data-src="" alt="hoa" width="20" height="20"
+                        title="nong sản  sạch" class="img-product-item">
+                      <h5 class="uppercase header-title">Chanh Vàng</h5>
+                      <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                      <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                    </div>
+                    <div class="granola-product">
+                      <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                        (click)="onClickProduct(product.id)" class="icon-product">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="box-text text-center product-items">
+                    <div class="box-text-inner">
+                      <img src="assets/image/duong-thot-not.jpg" data-src="" alt="hoa" width="20" height="20"
+                        title="nong sản  sạch" class="img-product-item">
+                      <h5 class="uppercase header-title">Đường thốt nốt</h5>
+                      <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                      <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                    </div>
+                    <div class="granola-product">
+                      <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                        (click)="onClickProduct(product.id)" class="icon-product">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="box-text text-center product-items">
+                    <div class="box-text-inner">
+                      <img src="assets/image/nho-xanh.jpg" data-src="" alt="hoa" width="20" height="20"
+                        title="nong sản  sạch" class="img-product-item">
+                      <h5 class="uppercase header-title">Nho Xanh</h5>
+                      <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                      <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                    </div>
+                    <div class="granola-product">
+                      <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                        (click)="onClickProduct(product.id)" class="icon-product">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="box-text text-center product-items">
+                    <div class="box-text-inner">
+                      <img src="assets/image/qc-3.jpg" data-src="" alt="hoa" width="20" height="20"
+                        title="nong sản  sạch" class="img-product-item">
+                      <h5 class="uppercase header-title">Vải Thiều</h5>
+                      <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                      <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                    </div>
+                    <div class="granola-product">
+                      <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                        (click)="onClickProduct(product.id)" class="icon-product">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="box-text text-center product-items">
+                    <div class="box-text-inner">
+                      <img src="assets/image/tra-hoa-cuc.jpg" data-src="" alt="hoa" width="20" height="20"
+                        title="nong sản  sạch" class="img-product-item">
+                      <h5 class="uppercase header-title">Trà Hoa Cúc</h5>
+                      <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                      <button  routerLink="/product-detail" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                    </div>
+                    <div class="granola-product">
+                      <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                        (click)="onClickProduct(product.id)" class="icon-product">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="box-text text-center product-items">
+                    <div class="box-text-inner">
+                      <img src="assets/image/nam-linh-chi.jpg" data-src="" alt="hoa" width="20" height="20"
+                        title="nong sản  sạch" class="img-product-item">
+                      <h5 class="uppercase header-title">Nam Linh Chi</h5>
+                      <p class="is-xsmall uppercase count">3 Sản phẩm</p>
+                      <button  routerLink="/product/1" class="btn btn-success is-xsmall ">Mua Ngay</button>
+                    </div>
+                    <div class="granola-product">
+                      <img *ngFor="let product of granolaProduct" [src]="product.imgSrc" alt=""
+                        (click)="onClickProduct(product.id)" class="icon-product">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <app-footer></app-footer>
+            </div>
+          </div>
+        </div>

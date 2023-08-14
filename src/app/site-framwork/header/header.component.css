@@ -1,0 +1,45 @@
+.navbar{
+    border: none;
+}
+.card{
+    background-position: left;
+   
+}
+.filter{
+    background-position: right;
+}
+.d-flex{
+    text-align:left;
+    
+}
+.btn{
+ 
+    background-color:#FFCC00;
+    color: #000;
+    
+    
+}
+.btn:hover{
+ 
+    background-color:rgb(212, 255, 0);
+    color: #000;
+    
+    
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    cursor: pointer;
+  }  
+   
+   
+   
+
